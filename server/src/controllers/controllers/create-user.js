@@ -6,10 +6,9 @@ export const createUser = async (req, res) => {
 
     const newUser = await Users.create({ email, password });
 
-    
     res.json({ message: "User created successfully!", user: newUser });
   } catch (error) {
     console.error("User үүсгэх үед алдаа гарлаа:", error);
-    res.status(500).json({ message: "User үүсгэхэд алдаа гарлаа" });
+    res.status(3000).json({ message: "User үүсгэхэд алдаа гарлаа" });
   }
 };
