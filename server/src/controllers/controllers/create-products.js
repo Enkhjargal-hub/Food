@@ -10,7 +10,6 @@ export const createProduct = async (req, res) => {
       price,
       description
     });
-
     
     res.json({ message: "Product created successfully!", product: newProduct });
   } catch (error) {

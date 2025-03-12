@@ -1,4 +1,4 @@
-import { Food } from "../models/food.model.js";
+import { Food } from "../models/food.schema.js";
 
 // All food avahdaa
 export const getAllFoods = async (req, res) => {
