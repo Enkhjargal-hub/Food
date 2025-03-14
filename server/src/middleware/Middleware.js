@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import { TOKEN_SECRET } from "../../config/env.js";
 import User from "../models/user-schema.js";
 
-export const authorize = async (req, res, next) => {
+export const Middleware = async (req, res, next) => {
   try {
     const token = req.headers.authorization?.split(" ")[1]; // Token shuud avna
 
