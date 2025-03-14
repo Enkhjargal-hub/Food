@@ -3,9 +3,9 @@ import { getAllUsers } from "../controllers/users/get-all-users.js";
 import { createUser } from "../controllers/users/create-user.js";
 import { getUser } from "../controllers/users/get-user.js";
 import { updateUser } from "../controllers/users/update-user.js";
+import { authorize } from "../../middleware/authorize.js";
 // import { deleteUser } from "../resolvers/users/delete-user.js";
-// import { authorize } from "../middleware/authMiddleWare.js";
-// import { createUser } from "../resolvers/users/create-user.js"; // Create user function
+
 
 export const usersRouter = express.Router();
 
